@@ -20,8 +20,11 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "baseUrl": "src",
+    "noImplicitAny": false //pozwala na dostep do pol obiektow, ktorych pola są any
   },
   "include": [
+    "**/*.ts",
+    "**/*.tsx",
     "src"
   ]
 }

@@ -65,5 +65,6 @@ module.exports = {
       'import/prefer-default-export': 'off',
       '@typescript-eslint/explicit-function-return-type': 'off',
       '@typescript-eslint/no-var-requires': 'off',
+      "react/prop-types": ["warn"],
     },
   };
