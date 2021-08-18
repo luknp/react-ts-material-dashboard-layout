@@ -1,13 +1,18 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
+import Header from 'components/Header';
+import Sidebar from 'components/Sidebar';
 
 function Layout() {
+  const [isSidebarOpen, setSidebarOpen] = React.useState(false);
+
+  const handleSidebarOpen = (state: boolean) => {
+    setSidebarOpen(state);
+  };
+
   return (
     <div className=''>
-      <h1>Layout</h1>
-      <Button variant='contained' color='primary'>
-        Material UI test
-      </Button>
+      <Header isSidebarOpen={isSidebarOpen} handleSidebarOpen={handleSidebarOpen} />
+      <Sidebar isSidebarOpen={isSidebarOpen} handleSidebarOpen={handleSidebarOpen} />
     </div>
   );
 }

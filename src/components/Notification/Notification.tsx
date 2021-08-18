@@ -42,7 +42,7 @@ function getIconByType(type = 'offer') {
 }
 
 type Props = {
-  variant: 'contained' | 'rounded';
+  variant: 'contained' | 'rounded' | 'outlined';
   [x: string]: any;
 };
 
