@@ -8,7 +8,7 @@ import useStyles from './styles';
 import Dot from '../Dot';
 
 type Props = {
-  link: string;
+  link?: string;
   icon: JSX.Element;
   label: string;
   isSidebarOpen: boolean;
@@ -19,7 +19,7 @@ type Props = {
 const SidebarLink: React.FC<Props> = ({ link, icon, label, isSidebarOpen, nested, type, children }) => {
   const classes = useStyles();
   const location = useLocation();
-
+  console.log(link);
   const [isOpen, setIsOpen] = useState(false);
   const isLinkActive = link && (location.pathname === link || location.pathname.indexOf(link) !== -1);
 

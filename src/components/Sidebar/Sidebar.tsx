@@ -55,8 +55,8 @@ export default function Sidebar({ isSidebarOpen, handleSidebarOpen }: Props) {
         </IconButton>
       </div>
       <List>
-        {structure.map(link => (
-          <SidebarLink key={link.id} isSidebarOpen={isSidebarOpen} {...link} />
+        {structure.map(subpage => (
+          <SidebarLink key={subpage.id} isSidebarOpen={isSidebarOpen} {...subpage} />
         ))}
       </List>
     </Drawer>
