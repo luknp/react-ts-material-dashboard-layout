@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 }));
 
 type Props = {
-  colorBrightness: string;
+  colorBrightness?: string;
   color: string;
   [x: string]: any;
 };

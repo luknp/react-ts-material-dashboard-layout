@@ -5,14 +5,14 @@ import { Typography as TypographyBase } from '@material-ui/core';
 import { useTheme } from '@material-ui/styles';
 
 type Props = {
-  colorBrightness: string;
-  color: string;
-  weight: string;
-  size: string;
+  colorBrightness?: string;
+  color?: string;
+  weight?: string;
+  size?: string;
   [x: string]: any;
 };
 
-const Typography: React.FC<Props> = ({ children, weight, size, colorBrightness, color, ...props }) => {
+const Typography: React.FC<Props> = ({ children, weight = 'medium', size = 'sm', colorBrightness, color = 'primary', ...props }) => {
   const theme: Theme = useTheme();
 
   return (
