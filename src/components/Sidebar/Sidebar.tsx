@@ -13,7 +13,7 @@ type Props = {
   handleSidebarOpen: (state: boolean) => void;
 };
 
-const Sidebar: React.FC<Props> = ({ isSidebarOpen, handleSidebarOpen }) => {
+export default function Sidebar({ isSidebarOpen, handleSidebarOpen }: Props) {
   const classes = useStyles();
   const theme: Theme = useTheme();
 
@@ -73,6 +73,4 @@ const Sidebar: React.FC<Props> = ({ isSidebarOpen, handleSidebarOpen }) => {
       setPermanent(true);
     }
   }
-};
-
-export default Sidebar;
+}
